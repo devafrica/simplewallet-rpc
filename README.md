@@ -4,7 +4,7 @@
 please edit the cpa.class.php file to reflect your wallets RPC details before you try the dummy.php file, ie this section:
 
 ```sh
-    /**
+    	/**
 	 * Host of Simplewallet JSON RPC API
 	 */
 	const RPC_HOST = "YOUR RPC IP GOES HERE";
