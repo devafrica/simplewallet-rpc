@@ -126,8 +126,7 @@ class Cpa {
 			}
 			usleep(self::RPC_TIMER);
 			$res = curl_exec($ch);	
-//echo "</br></br>ch</br>".var_dump($ch)."</br></br></br>";			
-//echo "</br></br>res</br>".var_dump($res)."</br></br></br>";
+
 			if(curl_errno($ch) > 0){
 				curl_close($ch);
 				return false;
@@ -425,9 +424,9 @@ class Cpa {
 			$args["params"]["fee"] = ($fee > 0) ? $fee : $this->service_fee;
 
 			$result = [];
-echo "</br></br>args</br>".var_dump($args)."</br></br></br>";
+
 			$data = $this->apiCall($args);
-echo "</br></br>data</br>".var_dump($data)."</br></br></br>";
+
 
 			$result["status"] = false;
 
